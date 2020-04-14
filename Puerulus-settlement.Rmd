@@ -1,0 +1,19 @@
+---
+title: "Oceeanographic drivers of lobster Puerulus settlement"
+author: "Tim Langlois and Matt Navarro"
+date: "14/04/2020"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Read in data
+```{r}
+Puerulus <- read.csv(text=getURL("https://raw.githubusercontent.com/UWA-SCIE2204-Marine-Systems/Catch-curve/master/AgeDatWithConstRec.csv"))
+```
+
+
