@@ -125,8 +125,16 @@ puerulus_plot
 ![](Puerulus-settlement_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 Notice how the data puerulus counts go up and down. There is actually a
-lot of variability. On high years puerulus counts can be as high as 90,
-whilst in low years it can be less than 1.
+lot of variability.
+
+Q1. Use the summary() function to look at the maximum and minimum
+Puerulus counts across the data range. You will need to write your own
+code. Use help(summary) for details or google how to do it (google is
+always your friend when using R). hint: summary() only requires one
+argument. Record the maximum and minimum Puerulus count for the quiz.
+
+Q2. Use the summary() function again to look at the maximum and mimum
+for SOI. Record the maximum and minimum SOI for the quiz.
 
 ### Create a composite plot
 
@@ -209,19 +217,15 @@ cor(dat$Puerulus, dat$FMSL) #Check FMSL correlation coefficient
 
     ## [1] 0.2260079
 
-``` r
-cor(dat$Puerulus, dat$SOI) #Check SOI correlation coefficient
-```
-
-    ## [1] 0.3155193
+Q3. Modify the code above to estimate the correlation coefficient
+between Puerulus and SOI. Record your answer for the quiz.
 
 The correlation coefficients are positive between puerulus and FMSL and
 puerulus and SOI. This confirms what we obsrerved in the multiplot -
 when the FMSL and SOI are higher puerulus counts are higher.
 
-But, the correlation coefficients are not huge. Between puerulus and
-FMSL we get 0.23 and between puerulus and SOI we get 0.32. For a high
-degree of correlation we would expect something more than 0.5.
+But, the correlation coefficients are not huge. For a high degree of
+correlation we would expect something more than 0.5.
 
 So what else might be going on?
 
@@ -276,14 +280,12 @@ cor(dat_pre2007$Puerulus, dat_pre2007$FMSL) #Check FMSL correlation coefficient
 
     ## [1] 0.6044675
 
-``` r
-cor(dat_pre2007$Puerulus, dat_pre2007$SOI) #Check SOI correlation coefficient
-```
+Q4. Modify the above code to estimate the correlation coefficient pre
+2007 between Puerulus and SOI. Record your answer for the quiz.
 
-    ## [1] 0.5263896
-
-We can see that pre-2007 we get strong correlations between puerulus
-count and FMSL and puerulus count and SOI.
+Q5. True/False: The correlation coefficient between Puerulus count and
+SOI is larger when using all of the data compared to just using the pre
+2007 data?
 
 ### What has changed?
 
