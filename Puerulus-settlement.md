@@ -73,7 +73,7 @@ puerulus as they are swimming back towards the shallow reefs.
 Lets have a quick look at our data.
 
 ``` r
-dat <- read.csv(text=getURL("https://raw.githubusercontent.com/UWA-SCIE2204-Marine-Systems/Biological-oceanography/master/Data/Data_for_puerulus.csv"))
+dat <- as.data.frame(read_csv(url("https://raw.githubusercontent.com/UWA-SCIE2204-Marine-Systems/Biological-oceanography/master/Data/Data_for_puerulus.csv")))
 head(dat)
 ```
 
