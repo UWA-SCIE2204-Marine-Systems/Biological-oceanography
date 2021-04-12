@@ -9,7 +9,7 @@ recruitment of Western Rock Lobster.
 Before we being lets load the packages we will use today.
 
 ``` r
-library(RCurl) # to read data from GitHub
+library(readr) # to read data from GitHub
 library(ggplot2) #to plot data
 library(cowplot) #to create multiplots
 ```
@@ -38,7 +38,7 @@ library(tidyr) #to tidy data
     ##     complete
 
 ``` r
-library(dplyr) #to plot data
+library(dplyr) #to re-arrange data
 ```
 
     ## 
@@ -74,7 +74,6 @@ Lets have a quick look at our data.
 
 ``` r
 dat <- read.csv(text=getURL("https://raw.githubusercontent.com/UWA-SCIE2204-Marine-Systems/Biological-oceanography/master/Data/Data_for_puerulus.csv"))
-dat<-dat[1:50,]  #removes NA column
 head(dat)
 ```
 
